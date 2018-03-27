@@ -1,0 +1,48 @@
+.site-header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+    rgba($lightGreen, .8),
+    rgba($darkGreen, .8)), url(../../assets/images/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    &__box-centered {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__title {
+        color: #FFF;
+        text-transform: uppercase;
+
+        backface-visibility: hidden;
+
+        &__main {
+            display: block;
+            font-size: 3.75rem;
+            font-weight: 400;
+            letter-spacing: 2.1875rem;
+            animation: moveInLeft 1.5s ease-out;
+        }
+
+        &__sub {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1.0875rem;
+            animation: moveInRight 1.5s ease-out;
+        }
+    }
+}

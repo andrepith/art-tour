@@ -1,0 +1,28 @@
+.btn {
+	text-decoration: none;
+	padding: .75rem 1.2rem;
+	display: inline-block;
+	text-transform: uppercase;
+	border-radius: 6.25rem;
+	transition: all .2s;
+
+	&:hover {
+		transform: translateY(-.1875rem);
+		box-shadow: 0 .625rem 1.25rem rgba(#000, .2);
+	}
+
+	&:active {
+		transform: translateY(-.0625rem);
+		box-shadow: 0 .3125rem .625rem rgba(#000, .2);
+	}
+
+	&__white {
+		background-color: #FFF;
+		color: rgba($lightGreen, .8);
+	}
+
+	&__header {
+		animation: moveInBottom 1.5s ease-out .75s;
+		animation-fill-mode: backwards;
+	}
+}
